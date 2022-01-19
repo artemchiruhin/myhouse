@@ -1,0 +1,41 @@
+@media screen and (max-width: 600px) {
+    .btn-hamburger {
+        display: block;
+    }
+    .nav-buttons {
+        display: none;
+    }
+    .admin-panel-item {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .admin-sidebar-container {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 992px) {
+    .orders-table-container {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .orders-table-container {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .categories-table-container {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .user-orders-table-container {
+        overflow-x: scroll;
+    }
+}

@@ -1,0 +1,136 @@
+/* Анимация появления слева */
+.fadeInLeft {
+    animation: fadeInLeft 1s ease-in-out;
+}
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+.btn-green {
+    background: #08C6AB;
+    color: #fff;
+}
+.btn-green-outline {
+    border: 1px solid #08C6AB;
+    color: #08C6AB;
+}
+.btn-lightgreen {
+    background: #58FFE7;
+    color: #fff;
+}
+.btn-lightgreen-outline {
+    border: 1px solid #58FFE7;
+    color: #58FFE7;
+}
+
+.btn-green:hover {
+    background: transparent;
+    border: 1px solid #08C6AB;
+    color: #08C6AB;
+    transition: all .25s ease-in-out;
+}
+.btn-green-outline:hover {
+    background: #08C6AB;
+    color: #fff;
+    border: 1px solid #08C6AB;
+    transition: all .25s ease-in-out;
+}
+.btn-lightgreen:hover {
+    background: transparent;
+    border: 1px solid #58FFE7;
+    color: #58FFE7;
+    transition: all .25s ease-in-out;
+}
+.btn-lightgreen-outline:hover {
+    background: #58FFE7;
+    color: #fff;
+    transition: all .25s ease-in-out;
+}
+.text-green {
+    color: #08C6AB;
+}
+.text-lightgreen {
+    color: #58FFE7;
+}
+.text-dark {
+    color: #212B38;
+}
+
+.btn-hamburger{
+    display: none;
+    width: 45px;
+    height: 45px;
+    position: relative;
+}
+.btn-hamburger span,
+.btn-hamburger span::before,
+.btn-hamburger span::after{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: calc(50% - 15px);
+}
+.btn-hamburger span::before,
+.btn-hamburger span::after{
+    content: '';
+    transition: .3s;
+}
+.btn-hamburger span::before{
+    transform: translateY(-7px);
+}
+.btn-hamburger span::after{
+    transform: translateY(7px);
+}
+.btn-hamburger_active span{
+    height: 0;
+}
+.btn-hamburger_active span::before{
+    transform: rotate(45deg);
+}
+.btn-hamburger_active span::after{
+    transform: rotate(-45deg);
+}
+
+.page-link {
+    color: #212B38;
+}
+.page-item.active .page-link {
+    background-color: #212B38;
+    border-color: #212B38;
+    color: #08C6AB;
+}
+
+.page-item:not(.active):not(.disabled):hover .page-link {
+    color: #08C6AB;
+}
+
+.form-control:focus, .form-select:focus, .btn-green:active, .btn-green-outline:active {
+    border-color: #08C6AB;
+    box-shadow: 0 0 0 .25rem rgba(88,255,231,.25)
+}

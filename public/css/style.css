@@ -1,0 +1,109 @@
+/* Основная навигация */
+.navigation {
+    padding: 10px 15px;
+    background: #212B38;
+}
+.navigation > .main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    margin-right: 20px;
+}
+.logo a {
+    font-size: 1.25rem;
+}
+.menu li {
+    margin: 0 10px;
+}
+.menu li:first-child {
+    margin-left: 0;
+}
+.menu li a {
+    text-decoration: none;
+    color: #08C6AB;
+}
+.menu li a:hover, .user-link:hover, .admin-sidebar li a:hover, .admin-panel-link:hover {
+    color: #58FFE7;
+    transition: color .25s ease-in-out;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    margin-right: 15px;
+}
+.nav-buttons a:last-child {
+    margin-right: 0;
+}
+
+/* Нижнее меню (на телефоне) */
+.menu-bottom {
+    display: none;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.menu-bottom .menu li {
+    margin: 0;
+}
+.menu-bottom .menu a {
+    font-size: 18px;
+}
+.menu-bottom .nav-buttons-bottom a {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+}
+.menu-bottom__active {
+    display: block;
+}
+
+.user-link, .admin-panel-link {
+    text-decoration: none;
+    color: #08C6AB;
+}
+
+.admin-sidebar {
+    list-style: none;
+    padding: 0;
+}
+.admin-sidebar li a {
+    text-decoration: none;
+    color: #08C6AB;
+}
+.admin-sidebar li {
+    padding: 7px 10px;
+}
+.admin-sidebar li a.active {
+    border-left: 3px solid #08C6AB;
+    background: rgba(33, 43, 55, 0.05);
+}
+
+.admin-dashboard {
+    margin-top: 50px;
+}
+
+.admin-sidebar-container {
+    border-right: 1px solid rgba(8, 198, 171, 0.5);
+}
+
+.filter-form {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.filter-select {
+    width: 200px;
+    margin-left: 10px;
+}
+
+.house-image  {
+    text-align: center;
+}
