@@ -47,7 +47,7 @@
 | 18 | /admin/orders/{order}/change-status | admin.orders.change-status-order | GET | auth, admin | OrderController, editStatus |
 | 19 | /admin/orders/{order}/change-status | admin.orders.change-status-order | POST | auth, admin | OrderController, updateStatus |
 
-## :deciduous_tree: Файловая структура функциональной части проекта проекта
+## :deciduous_tree: Файловая структура функциональной части проекта
 
 Что создано мной. Как видите, всё распределено по своим разделам.
 ```
